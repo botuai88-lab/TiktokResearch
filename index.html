@@ -1,0 +1,138 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>TikTok AI Analyst - Tối Ưu Hóa Nội Dung Viral</title>
+    <meta name="description" content="Phân tích video TikTok bằng AI. Đánh giá điểm viral, phân tích hook, cấu trúc kịch bản và đưa ra lời khuyên cải thiện kênh của bạn.">
+    <meta name="keywords" content="phân tích tiktok, ai video analyzer, điểm viral, viết hook tiktok, chiến lược nội dung, công cụ tiktok">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tiktok.ngocanhblog.com/">
+    <meta property="og:title" content="TikTok AI Analyst - Tối Ưu Hóa Nội Dung Viral">
+    <meta property="og:description" content="Phân tích video TikTok bằng AI. Nhận điểm số viral và lời khuyên tối ưu.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=1000&auto=format&fit=crop">
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://tiktok.ngocanhblog.com/" />
+
+    <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3046/3046121.png">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6821994167102932" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Add html2pdf library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                emerald: {
+                  50: '#F0F7F4',
+                  100: '#DDECE5',
+                  200: '#B8D6C9',
+                  300: '#92C0AC',
+                  400: '#6DA990',
+                  500: '#489373',
+                  600: '#14452F', /* Pantone #14452F */
+                  700: '#103927',
+                  800: '#0C2D1F',
+                  900: '#082116',
+                  950: '#04100B',
+                },
+              }
+            }
+          }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light background */
+            color: #1e293b; /* Dark text */
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+
+        @media print {
+            @page { margin: 0.5cm; size: A4; }
+            
+            /* Hide everything by default */
+            body { 
+                visibility: hidden; 
+                background: white !important;
+                -webkit-print-color-adjust: exact !important; 
+                print-color-adjust: exact !important; 
+            }
+            
+            /* Hide UI elements explicitly */
+            .no-print, button, footer, .fixed-header { display: none !important; }
+
+            /* Show ONLY the printable container and its children */
+            .printable-container {
+                visibility: visible !important;
+                position: absolute !important;
+                left: 0 !important;
+                top: 0 !important;
+                width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                background: white !important;
+                z-index: 99999 !important;
+            }
+            .printable-container * {
+                visibility: visible !important;
+            }
+
+            /* Reset Scrollbars and Heights for Printing */
+            .overflow-y-auto, .overflow-x-auto, .custom-scrollbar { 
+                overflow: visible !important; 
+                height: auto !important; 
+                max-height: none !important; 
+                width: auto !important;
+            }
+            
+            /* Ensure Modals Expand */
+            .fixed.inset-0 {
+                position: relative !important;
+                inset: auto !important;
+                width: 100% !important;
+                height: auto !important;
+                background: white !important;
+            }
+            
+            /* Typography adjustments */
+            body { color: black !important; }
+            .text-white { color: black !important; } 
+            .bg-slate-900 { color: white !important; } /* Keep contrast headers */
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+</body>
+</html>
